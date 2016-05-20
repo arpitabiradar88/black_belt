@@ -1,0 +1,7 @@
+<div ng-controller="ordersController">
+      <p ng-bind="errors.message"></p>
+      <form ng-submit="addQuestion()">
+        <p>Question: <textarea ng-model="newQuestion.question"></textarea></p>
+        <p><input type="submit" value="Question" ng-click="addQuestion()"/></p>
+      </form>
+</div>

@@ -1,0 +1,23 @@
+<div ng-controller="customersController">
+
+    <h1>Add a new customer</h1>
+
+        <form name="newCustomer" novalidate>
+
+            <p id="add-customer">
+                Name:<input type="text" ng-model="customer.name" required name="name" ng-minlength="2">
+
+                <!--
+                'ng-disabled="newCustomer.$invalid"' disables
+                submit input tag until the conditions
+                in the input tag above are met which includes
+                the "required" attribute so that the field
+                can't be blank and the 'ng-minlength="2"'
+                attribute so that the field must have 2
+                characters or more
+                -->
+                <a href="#/dashboard"> --><button class="btn btn-primary col-md-1 col-md-offset-5" ng-click="checkCustomer(customer)">Submit</button><!-- </a> -->
+            </p>
+
+        </form>
+</div>    
